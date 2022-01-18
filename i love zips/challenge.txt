@@ -1,0 +1,7 @@
+Name: Unzipped
+
+Category: Misc, Crypto :th0nk:
+
+Difficulty: Easy-Medium?
+
+Description: Unzip the files!

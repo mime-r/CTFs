@@ -1,0 +1,125 @@
+[SPOILER ALERT]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# It's really the first CTF challenge I've ever made, so sorry if there are some errors.
+
+Writeup:
+
+There is a file called "unzip_me_999.zip". Seems pretty straightforward. Let's unzip it.
+
+There is another zip file inside "unzip_me_999.zip". named "unzip_me_998.zip". Continue unzipping it.
+
+If you use a python code, you should be able to unzip all the way, until you are stuck with an error as "unzip_me_538.zip" can't be unzipped.
+
+You realise that it is password protected, and in the "unzip_me_539.zip" file, there is a list of random lettered strings.
+
+Brute force the file using a script with each line of the text file.
+
+After it is successfully unlocked with a specific line in the text file (let that string be _password_), continue unzipping it until you have reached the last text file.
+
+Put the entire fake flag into a vignere cipher, using _password_ as the key. How would we know that is in a vignere cipher? Google "Men and victims, salt and fire." in the challenge flag file. You will see something related to Blaise de vignere.
+
+You will get your flag!
+
+
+Random Notes / How I made this:
+
+Password of zip file: Line 52 of passwords.txt: uenCNfvxdltFSYKIQcmORTsqk
+ 
+Using Vignere Cipher and Password of zip file as key, (https://www.dcode.fr/vigenere-cipher)
+YBN{1_h4t3_z1pp5_g3t_m3_fl4G} => SFA{1_j4g3_e1km5_j3e_f3_kd4E}
+
