@@ -101,7 +101,7 @@ my_treasure.jpg ---[Cyberchef - Extract Files (DOWNLOAD ALL)]---> TREASURE.zip
 MY TREASURE.mp3 is throwing you off :)
 go to TREASURE.zip/Flag/the_beginning.txt
 realise how "HIDDEN" is in caps
-cmd > notepad the_beginning.txt:HIDDEN
+WHITESPACE STEGNO
 you will get a soundcloud URL
 download the sound file 
 run it through spectrogram
